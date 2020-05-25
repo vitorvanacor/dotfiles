@@ -1,5 +1,7 @@
+# See https://github.com/anishathalye/dotbot
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ["~"]
@@ -8,6 +10,7 @@
     ~/.dotfiles: ""
     ~/.tmux.conf: .tmux.conf
     ~/.zshrc: .zshrc
+    ~/.p10k.zsh: .p10k.zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
