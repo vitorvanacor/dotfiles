@@ -1,3 +1,5 @@
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
+
 source $HOME/dotfiles/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
