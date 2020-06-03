@@ -1,7 +1,7 @@
 [alias]
     st = status -sb
     save = commit -a -m "Save"
-    sync = !git rebase
+    sync = !git rebase && git push
 
 [pull]
     ff = only
