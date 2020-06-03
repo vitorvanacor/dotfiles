@@ -1,10 +1,12 @@
 [alias]
     st = status -sb
     tobranch = "!f() { git checkout $1 2>/dev/null || git checkout -b $1; }; f"
-    save = "!git-save.sh"
-    sync = !git pull --rebase && git push
+    current = rev-parse --abbrev-ref HEAD
     amend = !git add -A && git commit --amend --no-edit
     uncommit = "!bash -c 'git reset HEAD~$1' --"
+    save = !git-save.sh
+    sync = !git-sync.sh
+    backup = !git-backup.sh
 
 [pull]
     ff = only
