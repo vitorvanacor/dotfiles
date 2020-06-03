@@ -1,8 +1,7 @@
  
-#!/bin/sh
+#!/bin/bash
 # gets the url for the given fork
 __addremote_url() {
-  # shellcheck disable=SC2039
   local fork remote current
   fork="$1"
   if ! git config --get remote.origin.url > /dev/null 2>&1; then
@@ -15,9 +14,7 @@ __addremote_url() {
 }
 
 # adds a remote
-# shellcheck disable=SC2039
 add-remote() {
-  # shellcheck disable=SC2039
   local fork="$1" name="$2" url
   test -z "$name" && name="$fork"
   url="$(__addremote_url "$fork")" || return 1
@@ -25,7 +22,6 @@ add-remote() {
 }
 
 # adds an upstream remote
-# shellcheck disable=SC2039
 add-upstream() {
   add-remote "$1" "upstream"
 }

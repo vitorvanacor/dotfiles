@@ -1,3 +1,25 @@
 [alias]
     st = status -sb
     save = commit -a -m "Save"
+    sync = !git rebase
+
+[pull]
+    ff = only
+
+[push]
+    default = current
+
+[rebase]
+    autoSquash = true
+    autoStash = true
+    stat = true
+
+[url "https://github.com/"]
+    insteadOf = gh/
+
+[user]
+    name = Vitor Vanacor
+    email = vitorvanacor@gmail.com
+
+[color]
+    ui = auto
