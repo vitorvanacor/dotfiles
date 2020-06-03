@@ -1,2 +1,3 @@
 #!/bin/bash
-git commit -a -m "Save: $(date +%x\ %X)"
+git add -A
+git commit -m "Save: $(date +%x\ %X)"
