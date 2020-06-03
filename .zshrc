@@ -26,6 +26,10 @@ antigen theme romkatv/powerlevel10k
 # Tell Antigen that you're done.
 antigen apply
 
+# Remove some oh-my-zsh aliases
+unalias -m "_"
+unalias -m "g*"
+
 # Set personal aliases
 alias note="code ~/notebook"
 alias clone="git clone https://github.com/$1"
