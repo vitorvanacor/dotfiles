@@ -17,6 +17,7 @@ antigen bundle git
 antigen bundle bgnotify
 antigen bundle command-not-found
 antigen bundle docker
+antigen bundle sudo
 
 # Zsh users plugins
 antigen bundle zsh-users/zsh-completions
