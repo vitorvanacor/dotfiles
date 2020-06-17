@@ -41,7 +41,7 @@ unalias -m "g*"
 
 # Set personal aliases
 alias note="code ~/notebook"
-alias clone="git clone https://github.com/$1"
+alias clone='function clone(){ git clone https://github.com/$1; };clone'
 
 # Turn off all beeps
 unsetopt BEEP
