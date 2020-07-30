@@ -26,8 +26,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Other plugins
 antigen bundle djui/alias-tips
-antigen bundle desyncr/auto-ls
-AUTO_LS_COMMANDS=(ls '/usr/bin/git status -sb')
 
 # Load the theme.
 antigen theme romkatv/powerlevel10k
