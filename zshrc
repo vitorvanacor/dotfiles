@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/dotfiles/bin:$PATH
+export PATH=$HOME/.rbenv/bin:$PATH
 
 source $HOME/dotfiles/antigen/antigen.zsh
 
@@ -26,6 +27,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Other plugins
 antigen bundle djui/alias-tips
+antigen bundle unixorn/docker-helpers.zshplugin
+antigen bundle greymd/docker-zsh-completion
 
 # Load the theme.
 antigen theme romkatv/powerlevel10k
