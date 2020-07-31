@@ -6,7 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/dotfiles/bin:$PATH
-export PATH=$HOME/.rbenv/bin:$PATH
 
 source $HOME/dotfiles/antigen/antigen.zsh
 
@@ -49,6 +48,10 @@ unsetopt BEEP
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# rbenv for managing ruby versions
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/ubuntu/.sdkman"
