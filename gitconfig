@@ -5,7 +5,7 @@
     current = rev-parse --abbrev-ref HEAD
     amend = !git add -A && git commit --amend --no-edit
     unstage = reset HEAD
-    uncommit = "!bash -c 'git reset HEAD~$1' --"
+    uncommit = "!bash -c 'git reset --soft HEAD~$1' --"
     unpublish = "!git push origin --delete $(git current)"
     save = !git-save.sh
     sync = !git-sync.sh
