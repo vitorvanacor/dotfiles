@@ -40,7 +40,7 @@ unalias -m "_"
 unalias -m "g*"
 
 # Set personal aliases
-alias note="code ~/notebook"
+alias copy='xclip -sel clip'
 alias clone='function clone(){ git clone https://github.com/$1; };clone'
 
 # Turn off all beeps
