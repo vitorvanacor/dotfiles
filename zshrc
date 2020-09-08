@@ -39,9 +39,17 @@ antigen apply
 unalias -m "_"
 unalias -m "g*"
 
-# Set personal aliases
-alias copy='xclip -sel clip'
-alias clone='function clone(){ git clone https://github.com/$1; };clone'
+# Personal aliases
+# usage: cat file | copy
+alias copy='xclip -sel clip' 
+alias ctrlv='xclip -selection c -o'
+alias dcp='docker-compose'
+
+# Personal functions
+function clone(){ git clone https://github.com/$1; }
+function port() {
+  ss -tulpn | grep ":$1"
+}
 
 # Turn off all beeps
 unsetopt BEEP
