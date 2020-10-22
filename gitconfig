@@ -42,3 +42,7 @@
 
 [color]
     ui = auto
+
+# Load local config
+[include]
+    path = ~/.gitconfig.local
