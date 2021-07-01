@@ -44,6 +44,8 @@ unalias -m "g*"
 alias copy='xclip -sel clip' 
 alias ctrlv='xclip -selection c -o'
 alias dcp='docker-compose'
+alias dcp-run='docker-compose run --rm'
+
 
 # Personal functions
 function clone(){ git clone https://github.com/$1; }
