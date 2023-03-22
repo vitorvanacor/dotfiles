@@ -1,6 +1,7 @@
 [alias]
     st = status -sb
     squash = "!bash -c 'git rebase --interactive HEAD~$1' --"
+    co = checkout
     br = "!sh -c 'git checkout -b $1 2>/dev/null || git checkout $1' --"
     ch = "!sh -c 'git stash && git checkout $1 && git stash pop' --"
     current = rev-parse --abbrev-ref HEAD
@@ -23,6 +24,11 @@
 [branch "master"]
   mergeoptions = --ff-only
 
+[core]
+    ignorecase =  false
+    autocrlf = input
+    editor = code -w
+
 [pull]
     ff = only
 
@@ -43,6 +49,12 @@
 
 [color]
     ui = auto
+
+[help]
+    autocorrect = 1
+
+[includeIf "gitdir:~/hatchworks/"]
+    path = ~/hatchworks/.gitconfig
 
 # Load local config
 [include]
